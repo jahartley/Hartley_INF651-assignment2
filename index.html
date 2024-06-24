@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Judson Hartley INF651</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div style="height: 20px;"></div>
+    <div id="mainContainer">
+      <h1 id="title"></h1>
+      <div style="display: flex; justify-content: space-between;"><p>Judson Hartley</p><p id="date"></p></div>
+    </div>
+    <div style="height: 20px;"></div>
+    <div id="mainContainer">
+      <h2>Guessing Game</h2>
+      <p>The Guessing Game selects a number between 1 and 10. See if you can guess the number!</p>
+      <div id="centerDiv">
+        <input id="guess" type="number" oninput="newGuess(this.value)" min="1" max="10">
+        <label for="guess">Enter a number from 1 to 10</label> 
+      </div>
+    </div>
+    <div style="height: 20px;"></div>
+    <div id="mainContainer">
+      <h2>Password Validator</h2>
+      <p>Enter a new password, and validate your entry.</p>
+      <div>
+        <input id="pw1" type="password" onchange="checkPw()">
+        <label for="pw1">Enter a password</label> 
+      </div>
+      <div>
+        <input id="pw2" type="password" onchange="checkPw()">
+        <label for="pw2">Verify your password</label> 
+      </div>
+      <input id="showPw" type="button" onclick="togglePwVis()" value="Show Password">
+    </div>
+    <div style="height: 20px;"></div>
+    <div id="mainContainer" style="height: 300px;">
+      <h2>Multiplication Table Generator</h2>
+      <p>Enter a number, from 1 to 10 and the multiplication table will be generated below the input box.</p>
+      <div id="centerDiv">
+        <input id="mulInput" type="number" oninput="makeTable(this.value)" min="1" max="10">
+        <label for="guess">Enter a number from 1 to 10</label> 
+      </div>
+      <div id="mulTable"></div>
+    </div>
+    <div style="height: 40px;"></div>
+    <a href="javascript:clearMsg()">
+      <div class="modal" id="fireworks" style="background-image: url(images/PYh.gif);">
+        <div id="messageBox"><h1>You Won!</h1></div>
+      </div>
+    </a>
+    <a href="javascript:clearMsg()">
+      <div class="modal" id="info">
+        <div id="messageBox"><h2 id="infoText">You Won!</h2></div>
+      </div>
+    </a>
+    <script src="scripts/main.js"></script>
+    
+  </body>
+</html>

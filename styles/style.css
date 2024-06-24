@@ -1,0 +1,94 @@
+html {
+  font-size: 10px;
+  background-color: #003a70;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #0004ff;
+  text-shadow: 3px 3px 1px black;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+input, label {
+  font-size: 16px;
+  margin: 10px;
+}
+
+body {
+  width: 600px;
+  margin: auto;
+  
+}
+#mainContainer {
+  background-color: #dadada;
+  margin: 30 auto;
+  padding: 0 20px;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+#centerDiv {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#mulTable {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  font-size: 16px;
+}
+
+.modal {
+  position: absolute;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-color: rgba(255, 255, 255, 0.0);
+  backdrop-filter: blur(5px);
+}
+
+#fireworks {
+  display: none;
+}
+
+#info {
+  display: none;
+}
+
+#messageBox {
+  z-index: 9999;
+  width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  font-size: 20px;
+  text-align: center;
+  border: 5px solid rgb(0, 0, 0);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
